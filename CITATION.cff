@@ -3,9 +3,11 @@ message: "If you use this software, please cite it as below."
 authors:
   - family-names: Onohara
     given-names: Ayaka
+    affiliation: Rikkyo University
 title: "Speaker-normalized Acoustic Distance for Japanese Pitch Accent"
 version: v2.0.2
 date-released: 2026-02-27
+doi: 10.5281/zenodo.18793740
 license: MIT
 keywords:
   - Japanese pitch accent
