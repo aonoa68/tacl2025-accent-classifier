@@ -1,0 +1,57 @@
+# Default parameters for pitch accent classification pipeline
+# ===========================================================
+
+# Audio processing
+audio:
+  sr: 16000            # Sample rate (Hz)
+  fmin: 50             # Minimum F0 (Hz)
+  fmax: 700            # Maximum F0 (Hz)
+  frame_length: 1024   # Frame length (samples)
+  hop_length: 160      # Hop length (samples)
+  top_db: 25           # VAD threshold (dB)
+  min_seg_ms: 120      # Minimum segment length (ms)
+
+# DTW distance
+dtw:
+  band_ratio: 0.15     # Sakoe-Chiba band width (fraction)
+  ins_cost: 1.1        # Insertion cost
+  del_cost: 1.1        # Deletion cost
+  sub_cost: 1.0        # Substitution cost multiplier
+  alpha: 0.7           # Weight for static vs. delta: D = α·DTW(z) + (1-α)·DTW(Δz)
+
+# Classification
+classification:
+  k_neighbors: 3               # k for k-NN distance averaging
+  amb_abs_floor: 0.01          # Absolute margin floor
+  amb_rel_floor: 0.03          # Relative margin floor
+  target_ambiguous_rate: 0.25  # Target ambiguity rate for threshold calibration
+
+# Tarui preservation evaluation
+evaluation:
+  tarui_min_rate: 0.15   # Minimum acceptable Tarui classification rate
+  tarui_max_rate: 0.80   # Maximum acceptable Tarui classification rate
+  ratio_lo: 0.7          # Lower bound for Tarui/Kansai distance ratio
+  ratio_hi: 1.3          # Upper bound for Tarui/Kansai distance ratio
+
+# Virtual reference generation
+virtual_reference:
+  per_row_variants: 1
+  tilt:
+    tokyo: -0.05
+    kansai: -0.10
+    tarui: -0.08
+    kagoshima: 0.00
+
+# wav2vec 2.0 baseline
+wav2vec:
+  model_name: "facebook/wav2vec2-large-xlsr-53"
+  recommended_layer: 9  # Middle layer for frame-level DTW
+
+# Unsupervised clustering
+unsupervised:
+  linkage: "ward"
+  k_default: 4
+  fastdtw_radius: 5
+
+# Reproducibility
+seed: 2025

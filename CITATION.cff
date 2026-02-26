@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Speaker-normalized Acoustic Distance for Japanese Pitch Accent"
+message: "If you use this software, please cite the paper below."
+type: software
+license: MIT
+version: 2.0.0
+date-released: "2025-01-01"
+authors:
+  - family-names: ""
+    given-names: ""
+    # orcid: "https://orcid.org/0000-XXXX-XXXX-XXXX"
+keywords:
+  - Japanese pitch accent
+  - dynamic time warping
+  - speaker normalization
+  - dialect classification
+  - F0 analysis
+  - prosodic typology
+preferred-citation:
+  type: article
+  title: "Speaker-normalized Acoustic Distance for Japanese Pitch Accent: Design Principles and Evaluation"
+  authors:
+    - family-names: ""
+      given-names: ""
+  journal: "Transactions of the Association for Computational Linguistics"
+  year: 2025
+  # doi: "10.1162/tacl_a_XXXXX"

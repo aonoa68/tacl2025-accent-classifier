@@ -1,0 +1,20 @@
+# Core dependencies
+numpy>=1.21
+pandas>=1.3
+scipy>=1.7
+scikit-learn>=1.0
+matplotlib>=3.5
+seaborn>=0.11
+librosa>=0.9
+openpyxl>=3.0
+PyYAML>=6.0
+
+# Optional: DTW acceleration
+# numba>=0.56
+# fastdtw>=0.3
+# joblib>=1.1
+
+# Optional: wav2vec 2.0 baseline
+# torch>=1.10
+# transformers>=4.20
+# torchaudio>=0.10
