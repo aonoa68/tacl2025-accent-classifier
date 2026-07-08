@@ -1,3 +1,11 @@
+> [!IMPORTANT]
+> **Deprecated early version (February 2026) — no longer maintained.**
+> The current, maintained version of this project is at
+> **https://github.com/aonoa68/pitch-accent-dtw2025** (with its own archival DOI).
+> This snapshot is retained only to preserve the DOI
+> [10.5281/zenodo.18793740](https://doi.org/10.5281/zenodo.18793740).
+> Please refer to the maintained repository above.
+
 # Speaker-normalized Acoustic Distance for Japanese Pitch Accent
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18793740.svg)](https://doi.org/10.5281/zenodo.18793740)
@@ -9,7 +17,7 @@ Code and materials for:
 > **Speaker-normalized Acoustic Distance for Japanese Pitch Accent:
 > Design Principles and Evaluation**
 >
-> Transactions of the Association for Computational Linguistics (TACL), 2025.
+> An earlier version of a manuscript now under review; see the maintained repository above for the current version and results.
 
 ## Overview
 
